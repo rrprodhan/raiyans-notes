@@ -9,16 +9,16 @@ export class AuthenticationController {
 
     @Post('sign-up')
     signup() {
-        return `signup route`;
+        return this.authenticationService.signup();
     }
 
     @Post('sign-in')
     signin() {
-        return `signin route`;
+        return this.authenticationService.signin();
     }
 
     @Get('sign-out')
     signout() {
-        return `signout route`;
+        return this.authenticationService.signout();
     }
 }
